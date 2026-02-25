@@ -22,8 +22,8 @@
 <p align="center">
   <a href="#-descripción">Descripción</a> •
   <a href="#-características">Características</a> •
-  <a href="#-tecnologías">Tecnologías</a> •
-  <a href="#-instalación">Instalación</a> •
+  <a href="#%EF%B8%8F-tecnologías">Tecnologías</a> •
+  <a href="#-instalación-y-ejecución">Instalación</a> •
   <a href="#-autor">Autor</a>
 </p>
 
