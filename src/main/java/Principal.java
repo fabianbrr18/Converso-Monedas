@@ -1,12 +1,11 @@
 import com.google.gson.JsonSyntaxException;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Principal {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
         ConsultarMoneda consulta = new ConsultarMoneda();
@@ -33,8 +32,8 @@ public class Main {
                     """;
             System.out.println(menu);
             try {
-                System.out.print("opcion");
-                opcion = Integer.parseInt(lectura.nextLine);
+                System.out.print("Elija una opción: ");
+                opcion = Integer.parseInt(lectura.nextLine());
 
                 String baseCode = "";
                 String targetCode = "";
@@ -70,7 +69,7 @@ public class Main {
                     case 8:
                         System.out.println("\n--- Historial de Conversiones ---");
                         if (historial.isEmpty()) {
-                            System.out.println("No hay converciones registradas aún");
+                            System.out.println("No hay conversiones registradas aún");
                         } else {
                             for (String registro : historial) {
                                 System.out.println(registro);
@@ -107,7 +106,7 @@ public class Main {
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Error: Debe ingresar un número entero para seleccionar la opción.");
-            } catch (RuntimeException | JsonSyntaxException e) {
+            } catch (RuntimeException e) {
                 System.out.println("Ocurrió un error inesperado: " + e.getMessage());
                 System.out.println("Finalizando la aplicación.");
             }
