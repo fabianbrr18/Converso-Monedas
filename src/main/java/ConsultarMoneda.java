@@ -6,7 +6,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultarMoneda {
-    private static final String API_KEY = "14024c91a0e2765d92372858";
+    private static final String API_KEY = "AQUI_TU_API_KEY";
     private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/";
 
     public Moneda buscarMoneda(String baseCode, String targetCode, double amount) {
